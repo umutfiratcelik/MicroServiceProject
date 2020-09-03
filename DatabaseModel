@@ -1,0 +1,27 @@
+DATABASE MODEL	
+
+
+
+User{
+	
+	"id" : UserId ,
+	"first_name" : String,
+	"last_name" : String,
+	"phone": int,
+
+"mail":[
+
+{
+      "type":String,	
+
+    }
+   ]           
+ }
+
+ Advertisement{
+
+"price" : double,
+"AdNo" : int,
+"favorite": boolean
+
+ }
