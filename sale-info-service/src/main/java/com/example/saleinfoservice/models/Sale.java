@@ -1,57 +1,27 @@
 package com.example.saleinfoservice.models;
 
 public class Sale {
-    private int no;
-    private int price;
-    private int year;
-    private boolean favorite;
-    private String Model;
+    private String saleId;
+    private String name;
 
-    public Sale(int no, int price, int year, boolean favorite, String model) {
-        this.no = no;
-        this.price = price;
-        this.year = year;
-        this.favorite = favorite;
-        Model = model;
+    public Sale(String saleId, String name) {
+        this.saleId = saleId;
+        this.name = name;
     }
 
-    public String getModel() {
-        return Model;
+    public String getSaleId() {
+        return saleId;
     }
 
-    public void setModel(String model) {
-        Model = model;
+    public void setSaleId(String saleId) {
+        this.saleId = saleId;
     }
 
-    public int getYear() {
-        return year;
+    public String getName() {
+        return name;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public int getNo() {
-        return no;
-    }
-
-    public void setNo(int no) {
-        this.no = no;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public boolean isFavorite() {
-        return favorite;
-    }
-
-    public void setFavorite(boolean favorite) {
-        this.favorite = favorite;
+    public void setName(String name) {
+        this.name = name;
     }
 }

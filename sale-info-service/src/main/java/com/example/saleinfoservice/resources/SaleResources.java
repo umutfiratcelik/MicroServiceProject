@@ -13,7 +13,7 @@ public class SaleResources {
     @RequestMapping("/{saleId}")
     public Sale getSaleInfo(@PathVariable("saleId") String saleId)
     {
-return new Sale(89793238,5000,2012,true,"5 series");
+return new Sale(saleId,"test name");
 
 
     }
